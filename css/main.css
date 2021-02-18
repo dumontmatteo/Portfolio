@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url(https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre);
+@import url(https://fonts.googleapis.com/css2?family=Rozha+One);
 
 * {
 	box-sizing: border-box;
@@ -6,8 +8,11 @@
 
 body {
 	margin: 0;
-	font-family: arial;
+	font-family: Arial;
+    scroll-behavior: smooth;
 }
+
+/* NAV */
 
 nav{
 	padding-top: 20px;
@@ -16,7 +21,34 @@ nav{
 	display: block;
 	font-family: Poppins;
 	font-weight: bold;
+	scroll-behavior: smooth;
 }
+
+.nav-flex {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.links {
+	width: 150px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+@media (max-width: 576px) {
+	.links {
+		display: none;
+	}
+}
+
+/* GENERAL */
 
 section {
 	display: block;
@@ -27,7 +59,7 @@ section {
     width: 100%;
     padding-right: 20px;
     padding-left: 20px;
-    background-color: grey;
+    /*background-color: grey;*/
     margin : 0 auto;
 }
 
@@ -49,53 +81,90 @@ section {
     justify-content: space-around;
 }
 
+/* ABOUT */
+
 .picture {
 	flex: 0 0 30%;
-	height: 200px;
-	background-color: red;
-}
-
-.img {
-	height: 200px;
-	width: 200px;
-	background-color: green;
+	/*background-color: red;*/
 }
 
 .info {
-	height: 200px;
-	background-color: blue;
-	margin: 0 20px;
+	/*background-color: blue;*/
+	margin: auto 0 auto 0;
+	max-width: 80%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 820px) {
 	.info {
-		flex: 0 0 50%;
-	}
-}
-
-.titles {
-	height: 200px;
-	background-color: red;
-}
-
-@media (min-width: 576px) {
-	.illustration {
 		flex: 0 0 40%;
 	}
 }
 
+strong:before {
+	content: '';
+	position: absolute;
+	width: 0px;
+	height: 15pt;
+	background: darkblue;
+	transition: all 0.5s;
+	z-index: -1;
+}
+
+strong:hover:before {
+	width: 12em;
+}
+
+strong:hover{
+	transition: 1s;
+	color: white;
+	cursor: pointer;
+}
+
+/* WORK */
+
+.title {
+	line-height: 62pt;
+	font-size: 58pt; 
+	font-family: 'Rozha One';
+	font-style: italic;
+	font-weight: 900;
+}
+
+.title:before {
+	content: '';
+	position: absolute;
+	margin-left: -10px;
+	width: 0px;
+	height: 60pt;
+	background: darkblue;
+	transition: all 0.5s;
+	z-index: -1;
+}
+
+.title:hover:before{
+	width: 4.3em;
+}
+
+.title:hover{
+	transition: 1s;
+	color: white;
+	cursor: pointer;
+}
+
 .illustration {
-	height: 200px;
 	background-color: blue;
 	margin: 0 20px;
-	flex: 0 0 40%;
+	flex: 0 0 50%;
 }
 
 @media (max-width: 576px) {
 	.illustration {
 		display: none;
+		flex: 0 0 30%;
 	}
 }
+
+/* FOOTER */
 
 footer {
 	width: 100%;
@@ -103,12 +172,20 @@ footer {
 	background-color: black;
 }
 
+.footer-box {
+	width: 500px;
+	height: 150px;
+	padding: 30px;
+	color:white;
+}
+
+/* LOADER */
+
 .preloader {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	background-color: white;
-	z-index: 7;
 	display: grid;
 	place-items : center;
 	animation: fade .5s forwards;
@@ -118,11 +195,14 @@ footer {
 @keyframes fade {
 	from {
 		opacity: 1;
+		z-index: 5;
 	}
 	to {
 		opacity: 0;
+		z-index: -3;
 	}
 }
+
 
 .spinner {
 	width: 2rem;

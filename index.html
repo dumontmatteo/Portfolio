@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- PRE LOADER -->
-	<section class="preloader" style="">
+	<section class="preloader">
 	  <div class="spinner">
 	  </div>
 	</section>
@@ -17,41 +17,43 @@
 	<!-- NAV BAR -->
 	<nav>
 		<div class="container">
-	  		<div class="home">
-	    		<span>dumontmatteo</span>
-	  		</div>
-	  		<ul class="nav-links" style="display: none;">
-	    		<li><a href="#">about</a></li>
-	    		<li><a href="#">work</a></li>
-	    		<li><a href="#">contact</a></li>
-	  		</ul>
+			<div class="nav-flex">
+		  		<div class="home">
+		    		<a href="#">dumontmatteo</a>
+		  		</div>
+		  		<div class="links">
+		    		<a href="#work">work</a>
+		    		<a href="#contact">contact</a>
+		  		</div>
+		  	</div>
 	  	</div>
 	</nav>
 
 	<!-- ABOUT ME -->
-	<section class="about-section">
+	<section id="about">
 	  	<div class="container">
 		  	<div class="flex">
 		    	<div class="picture">
-		    		<div class="img"></div>
+		    		<img src="images/me.png" style="width: 350px">
 		    	</div>
 		    	<div class="info">
-		    		<h3>IT Engineering student at INSA Lyon looking for a 3 month front end development internship</h3>
-		    		<span>I am passionate about design and am looking forward to enhace my development skills. Get to know me by downloading my resume.</span>
+		    		<img src="images/name.png" style="width: 100px"></br>
+		    		<h2>I'm an IT Engineering student at INSA Lyon looking for a 3 month front end development internship.</h2>
+		    		<span>I am passionate about design and am looking forward to enhace my development skills. Get to know me by <strong class="download" download="images/name.png">downloading my resume.</strong></span>
 		    	</div>
 			</div>
 	  	</div>
 	</section>
 
 	<!-- WORK -->
-	<section class="work">
+	<section id="work">
 		<div class="container">
 			<div class="flex">
 				<div class="titles">
-					<span>MY WORK</span>
-					<span class="title">adesit</span>
-					<span class="title">tedxinsa</span>
-					<span class="title">zaybe</span>
+					<h3>MY WORK</h3></br>
+					<span class="title">adesit</span></br>
+					<span class="title">tedxinsa</span></br>
+					<span class="title">zaybe</span></br>
 				</div>
 				<div class="illustration">
 					<div class="img"></div>
@@ -61,14 +63,14 @@
 	</section>
 
 	<!-- CONTACT -->
-	<section class="contact">
+	<section id="contact">
 	</section>
 
 	<!-- FOOTER -->
 	<footer>
-		<div class="flec">
-			<div class="">
-				
+		<div class="flex">
+			<div class="footer-box">
+				Test
 			</div>
 		</div>
 	</footer>
