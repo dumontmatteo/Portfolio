@@ -22,8 +22,9 @@
 		    		<a href="#">dumontmatteo</a>
 		  		</div>
 		  		<div class="links">
-		    		<a>fr</a>
-		    		<a>en</a>
+		    		<a href="#" onclick="toFrench()">fr</a>
+		    		<a href="#" onclick="toEnglish()">en</a>
+		    		<div id="underline"></div>
 		  		</div>
 		  	</div>
 	  	</div>
@@ -38,8 +39,9 @@
 		    	</div>
 		    	<div class="info">
 		    		<img src="images/name.png" style="width: 100px"></br>
-		    		<h2>I'm an IT Engineering student at INSA Lyon looking for a 3 month front end development internship.</h2>
-		    		<span>I am passionate about design and am looking forward to enhace my development skills. Get to know me by <strong class="download" download="images/name.png">downloading my resume.</strong></span>
+		    		<h3 id="title">I'm an IT Engineering student at INSA Lyon looking for a 3-month front-end web development internship.</h3>
+		    		<span id="sub-title">I am passionate about design and am looking forward to enhance my development skills.</span></br>
+		    		<div class="button"><a id="cv" href="files/resume.pdf" download><strong id="button">SEE MY RESUME</strong></a></div>
 		    	</div>
 			</div>
 	  	</div>
@@ -50,7 +52,7 @@
 		<div class="container">
 			<div class="flex">
 				<div class="titles">
-					<h3>MY WORK</h3></br>
+					<h3 id="work-title">MY WORK</h3></br>
 					<a href="https://adesit.datavalor.com/" class="title" id="adesit" onmouseover="setImage()" onmouseout="resetImage()">adesit</a></br></br>
 					<a href="https://tedxinsa.com/" class="title" id="tedxinsa" onmouseover="setImage()" onmouseout="resetImage()">tedxinsa</a></br></br>
 					<a href="https://www.behance.net/gallery/90264063/ZAYBE-Mobile-App-UXUI-Design-Logo-Visual-Identity" class="title" id="zaybe" onmouseover="setImage()" onmouseout="resetImage()">zaybe</a></br>
@@ -66,7 +68,7 @@
 	<footer>
 		<div class="flex">
 			<div class="footer-box">
-				My Socials</br>
+				<span id="footer-title">My Socials</span></br>
 				<a href="https://dribbble.com/dumontmatteo"><img src="images/dribbble.svg" class="socials"></a>
 				<a href="https://github.com/dumontmatteo"><img src="images/github.svg" class="socials"></a>
 				<a href="https://codepen.io/dumontmatteo/"><img src="images/codepen.svg" class="socials"></a>
