@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins);
-@import url(https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre);
 @import url(https://fonts.googleapis.com/css2?family=Rozha+One);
 
 * {
@@ -31,7 +30,7 @@ nav{
 }
 
 .links {
-	width: 150px;
+	width: 50px;
 	display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -85,13 +84,15 @@ section {
 
 .picture {
 	flex: 0 0 30%;
-	/*background-color: red;*/
 }
 
 .info {
-	/*background-color: blue;*/
 	margin: auto 0 auto 0;
 	max-width: 80%;
+}
+
+.info span {
+	line-height: 16pt;
 }
 
 @media (min-width: 820px) {
@@ -103,8 +104,10 @@ section {
 strong:before {
 	content: '';
 	position: absolute;
+	margin-top: -1pt;
+	margin-left: -1pt;
 	width: 0px;
-	height: 15pt;
+	height: 18pt;
 	background: darkblue;
 	transition: all 0.5s;
 	z-index: -1;
@@ -142,7 +145,7 @@ strong:hover{
 }
 
 .title:hover:before{
-	width: 4.3em;
+	width: 4.4em;
 }
 
 .title:hover{
@@ -170,6 +173,7 @@ footer {
 	width: 100%;
 	padding-top : 20px;
 	background-color: black;
+	margin-top: 50px;
 }
 
 .footer-box {
@@ -177,6 +181,11 @@ footer {
 	height: 150px;
 	padding: 30px;
 	color:white;
+}
+
+.socials {
+	width: 20px;
+	margin: 20px 20px 10px 0; 
 }
 
 /* LOADER */
