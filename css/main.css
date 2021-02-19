@@ -51,7 +51,7 @@ a {
 #underline {
 	content: '';
 	position: absolute;
-	top : 42px;
+	top : 44px;
 	right: 20px;
 	width : 20px;
 	height: 3px;
@@ -121,7 +121,8 @@ section {
 }
 
 .button {
-	width: 160px;
+	width: 165px;
+	height: 42px;
 	margin-top: 30px;
 	padding: 10px;
 	color: white;
@@ -134,14 +135,14 @@ strong:before {
 	margin-top: -10px;
 	margin-left: -12px;
 	width: 0px;
-	height: 40px;
+	height: 38px;
 	background: black;
 	transition: all 0.5s;
 	z-index: -1;
 }
 
 strong:hover:before {
-	width: 157px;
+	width: 162px;
 }
 
 strong:hover{
